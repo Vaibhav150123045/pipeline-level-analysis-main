@@ -1,0 +1,339 @@
+{
+  "repo_owner": "morfien101",
+  "repo_name": "actions-authorized-user",
+  "commits": {
+    "2023-12-29 13:20:59 +0200": {
+      "code_analysis": {
+        "js/overly-large-range": {
+          "instances": [
+            {
+              "message": "Suspicious character range that is equivalent to \\[A-Z\\\\[\\\\\\\\]^_`a-z\\].",
+              "level": "5.0",
+              "locations": [
+                {
+                  "physicalLocation": {
+                    "artifactLocation": {
+                      "uri": "index.js",
+                      "uriBaseId": "%SRCROOT%",
+                      "index": 0
+                    },
+                    "region": {
+                      "startLine": 20998,
+                      "startColumn": 71,
+                      "endColumn": 74
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "cwe": "cwe-020"
+        }
+      },
+      "dependency_analysis": {
+        "@octokit/plugin-paginate-rest:9.1.4": {
+          "name": "@octokit/plugin-paginate-rest",
+          "version": "9.1.4",
+          "type": "npm",
+          "licenses": [],
+          "vulnerabilities": [
+            {
+              "id": "GHSA-h5c3-5r3r-rr8q",
+              "severity": "Medium",
+              "description": "@octokit/plugin-paginate-rest has a Regular Expression in iterator Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
+              "links": []
+            }
+          ]
+        },
+        "@octokit/request:8.1.6": {
+          "name": "@octokit/request",
+          "version": "8.1.6",
+          "type": "npm",
+          "licenses": [],
+          "vulnerabilities": [
+            {
+              "id": "GHSA-rmvr-2pp2-xj38",
+              "severity": "Medium",
+              "description": "@octokit/request has a Regular Expression in fetchWrapper that Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
+              "links": []
+            }
+          ]
+        },
+        "@octokit/request-error:5.0.1": {
+          "name": "@octokit/request-error",
+          "version": "5.0.1",
+          "type": "npm",
+          "licenses": [],
+          "vulnerabilities": [
+            {
+              "id": "GHSA-xx4v-prfh-6cgc",
+              "severity": "Medium",
+              "description": "@octokit/request-error has a Regular Expression in index that Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
+              "links": []
+            }
+          ]
+        },
+        "undici:5.28.1": {
+          "name": "undici",
+          "version": "5.28.1",
+          "type": "npm",
+          "licenses": [],
+          "vulnerabilities": [
+            {
+              "id": "GHSA-c76h-2ccp-4975",
+              "severity": "Medium",
+              "description": "Use of Insufficiently Random Values in undici",
+              "links": []
+            },
+            {
+              "id": "GHSA-3787-6prv-h9w3",
+              "severity": "Low",
+              "description": "Undici proxy-authorization header not cleared on cross-origin redirect in fetch",
+              "links": []
+            },
+            {
+              "id": "GHSA-9qxr-qj54-h672",
+              "severity": "Low",
+              "description": "Undici's fetch with integrity option is too lax when algorithm is specified but hash value is in incorrect",
+              "links": []
+            },
+            {
+              "id": "GHSA-cxrh-j4jr-qwg3",
+              "severity": "Low",
+              "description": "undici Denial of Service attack via bad certificate data",
+              "links": []
+            },
+            {
+              "id": "GHSA-m4v8-wqvr-p9f7",
+              "severity": "Low",
+              "description": "Undici's Proxy-Authorization header not cleared on cross-origin redirect for dispatch, request, stream, pipeline",
+              "links": []
+            }
+          ]
+        }
+      }
+    },
+    "2023-11-30 08:24:55 +0200": {
+      "code_analysis": {
+        "js/overly-large-range": {
+          "instances": [
+            {
+              "message": "Suspicious character range that is equivalent to \\[A-Z\\\\[\\\\\\\\]^_`a-z\\].",
+              "level": "5.0",
+              "locations": [
+                {
+                  "physicalLocation": {
+                    "artifactLocation": {
+                      "uri": "index.js",
+                      "uriBaseId": "%SRCROOT%",
+                      "index": 0
+                    },
+                    "region": {
+                      "startLine": 20998,
+                      "startColumn": 71,
+                      "endColumn": 74
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "cwe": "cwe-020"
+        }
+      },
+      "dependency_analysis": {
+        "@octokit/plugin-paginate-rest:9.1.4": {
+          "name": "@octokit/plugin-paginate-rest",
+          "version": "9.1.4",
+          "type": "npm",
+          "licenses": [],
+          "vulnerabilities": [
+            {
+              "id": "GHSA-h5c3-5r3r-rr8q",
+              "severity": "Medium",
+              "description": "@octokit/plugin-paginate-rest has a Regular Expression in iterator Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
+              "links": []
+            }
+          ]
+        },
+        "@octokit/request:8.1.6": {
+          "name": "@octokit/request",
+          "version": "8.1.6",
+          "type": "npm",
+          "licenses": [],
+          "vulnerabilities": [
+            {
+              "id": "GHSA-rmvr-2pp2-xj38",
+              "severity": "Medium",
+              "description": "@octokit/request has a Regular Expression in fetchWrapper that Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
+              "links": []
+            }
+          ]
+        },
+        "@octokit/request-error:5.0.1": {
+          "name": "@octokit/request-error",
+          "version": "5.0.1",
+          "type": "npm",
+          "licenses": [],
+          "vulnerabilities": [
+            {
+              "id": "GHSA-xx4v-prfh-6cgc",
+              "severity": "Medium",
+              "description": "@octokit/request-error has a Regular Expression in index that Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
+              "links": []
+            }
+          ]
+        },
+        "undici:5.28.1": {
+          "name": "undici",
+          "version": "5.28.1",
+          "type": "npm",
+          "licenses": [],
+          "vulnerabilities": [
+            {
+              "id": "GHSA-c76h-2ccp-4975",
+              "severity": "Medium",
+              "description": "Use of Insufficiently Random Values in undici",
+              "links": []
+            },
+            {
+              "id": "GHSA-3787-6prv-h9w3",
+              "severity": "Low",
+              "description": "Undici proxy-authorization header not cleared on cross-origin redirect in fetch",
+              "links": []
+            },
+            {
+              "id": "GHSA-9qxr-qj54-h672",
+              "severity": "Low",
+              "description": "Undici's fetch with integrity option is too lax when algorithm is specified but hash value is in incorrect",
+              "links": []
+            },
+            {
+              "id": "GHSA-cxrh-j4jr-qwg3",
+              "severity": "Low",
+              "description": "undici Denial of Service attack via bad certificate data",
+              "links": []
+            },
+            {
+              "id": "GHSA-m4v8-wqvr-p9f7",
+              "severity": "Low",
+              "description": "Undici's Proxy-Authorization header not cleared on cross-origin redirect for dispatch, request, stream, pipeline",
+              "links": []
+            }
+          ]
+        }
+      }
+    },
+    "2023-12-13 17:14:44 +0200": {
+      "code_analysis": {
+        "js/overly-large-range": {
+          "instances": [
+            {
+              "message": "Suspicious character range that is equivalent to \\[A-Z\\\\[\\\\\\\\]^_`a-z\\].",
+              "level": "5.0",
+              "locations": [
+                {
+                  "physicalLocation": {
+                    "artifactLocation": {
+                      "uri": "index.js",
+                      "uriBaseId": "%SRCROOT%",
+                      "index": 0
+                    },
+                    "region": {
+                      "startLine": 20998,
+                      "startColumn": 71,
+                      "endColumn": 74
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "cwe": "cwe-020"
+        }
+      },
+      "dependency_analysis": {
+        "@octokit/plugin-paginate-rest:9.1.4": {
+          "name": "@octokit/plugin-paginate-rest",
+          "version": "9.1.4",
+          "type": "npm",
+          "licenses": [],
+          "vulnerabilities": [
+            {
+              "id": "GHSA-h5c3-5r3r-rr8q",
+              "severity": "Medium",
+              "description": "@octokit/plugin-paginate-rest has a Regular Expression in iterator Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
+              "links": []
+            }
+          ]
+        },
+        "@octokit/request:8.1.6": {
+          "name": "@octokit/request",
+          "version": "8.1.6",
+          "type": "npm",
+          "licenses": [],
+          "vulnerabilities": [
+            {
+              "id": "GHSA-rmvr-2pp2-xj38",
+              "severity": "Medium",
+              "description": "@octokit/request has a Regular Expression in fetchWrapper that Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
+              "links": []
+            }
+          ]
+        },
+        "@octokit/request-error:5.0.1": {
+          "name": "@octokit/request-error",
+          "version": "5.0.1",
+          "type": "npm",
+          "licenses": [],
+          "vulnerabilities": [
+            {
+              "id": "GHSA-xx4v-prfh-6cgc",
+              "severity": "Medium",
+              "description": "@octokit/request-error has a Regular Expression in index that Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
+              "links": []
+            }
+          ]
+        },
+        "undici:5.28.1": {
+          "name": "undici",
+          "version": "5.28.1",
+          "type": "npm",
+          "licenses": [],
+          "vulnerabilities": [
+            {
+              "id": "GHSA-c76h-2ccp-4975",
+              "severity": "Medium",
+              "description": "Use of Insufficiently Random Values in undici",
+              "links": []
+            },
+            {
+              "id": "GHSA-3787-6prv-h9w3",
+              "severity": "Low",
+              "description": "Undici proxy-authorization header not cleared on cross-origin redirect in fetch",
+              "links": []
+            },
+            {
+              "id": "GHSA-9qxr-qj54-h672",
+              "severity": "Low",
+              "description": "Undici's fetch with integrity option is too lax when algorithm is specified but hash value is in incorrect",
+              "links": []
+            },
+            {
+              "id": "GHSA-cxrh-j4jr-qwg3",
+              "severity": "Low",
+              "description": "undici Denial of Service attack via bad certificate data",
+              "links": []
+            },
+            {
+              "id": "GHSA-m4v8-wqvr-p9f7",
+              "severity": "Low",
+              "description": "Undici's Proxy-Authorization header not cleared on cross-origin redirect for dispatch, request, stream, pipeline",
+              "links": []
+            }
+          ]
+        }
+      }
+    }
+  }
+}
