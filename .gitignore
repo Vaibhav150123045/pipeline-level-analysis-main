@@ -1,1 +1,3 @@
 dataset/workflows_from_dependents/**/*
+-lock.workflow_github_actions_analysis.csv#
+.DS_Store
