@@ -85,3 +85,27 @@ jobs:
           name: web-playwright-report
           path: apps/web/playwright-report/
           retention-days: 30
+
+  marketing:
+    name: Marketing CI
+    runs-on: ubuntu-latest
+    environment: Production
+
+    env:
+      # Sentry
+      PUBLIC_SENTRY_DSN: ${{ vars.PUBLIC_SENTRY_DSN }}
+      SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
+      SENTRY_PROJECT: marketing
+      SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Lint, Typecheck, Build, and Test
+        run: bun turbo lint typecheck build test:e2e --filter=@orbitkit/marketing
